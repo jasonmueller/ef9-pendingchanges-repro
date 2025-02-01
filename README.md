@@ -204,6 +204,12 @@ dotnet run --project IssueRepro.AppHost
 Migrations should run successfully.  However, we need to plug the ASP.NET Identity stuff in
 so we can use it and get the UI.  So, we add the following lines...
 
+Add the UI extensions to the Web project
+
+```
+dotnet add $APP_NAME.Web package Microsoft.AspNetCore.Identity.UI
+```
+
 Web/Program.cs
 
 ```
